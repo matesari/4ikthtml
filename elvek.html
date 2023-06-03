@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Neumann-elvek</title>
+</head>
+<body>
+    <main class="container w-md-75 w-lg-90 w-sm-50">
+        <header >
+            <h1>Neumann-elvek a számítógép felépítésében és működésében</h1>
+
+        </header>
+
+        <div>
+            <h2>A Neumann-elvek története</h2>
+            <p>Neumann János 1944-ben találkozott az ENIAC egyik építőjével, Herman Goldstine matematikussal. Ekkor említette Goldstine neki, hogy dolgoznak egy olyan számítógépen, amely másodpercenként több mint 300 szorzás elvégzésére lesz képes. A gép felkeltette Neumann érdeklődését és elutazott Philadelphiába, a Moore intézetbe, ahol a gépet építették. Ezzel a látogatással elkezdődött az együttműködés Neumann János és az ENIAC építői között, amelynek az eredménye az EDVAC terveinek elkészítése lett. Az EDVAC lett volna a világ első Neumann-elvű számítógépe, de a gépet tervező csoportból többen is kiléptek a gép készítése közben emiatt az EDVAC építése lassan történt és csak 1951-ben készült el, amikor már több Neumann-elvű, az EDVAC-nál fejlettebb gép is működött. Az első ilyen gép az Angliában készített EDSAC volt, de Neumann is megépítette IAS néven a saját Neumann-elvű gépét, illetve Eckert és Mauchly is elkészítette az UNIVAC-ot, a világ első sorozatgyártású számítógépet.</p>
+        </div>
+        <hr>
+        <div>
+            <h2>A számítógép felépítése</h2>
+            <img src="2.png" alt="régi gép" class="img-thumbnail régi  képjobb ">
+                <h4>Az első Neumann-elvű gépek</h4 >
+                <p>Neumann elképzelése szerint a számítógép összetevőit három csoportba lehet elkülöníteni.</p>
+                <ul>    
+                    <li>A központi egység, ez felelős a számítógép működtetéséért. A vezérlőegység feldolgozza a programok utasításait, az aritmetikai és logikai egység pedig végrehajtja a matematikai és logikai műveleteket.</li>
+                    <li>Az operatív tár, ami  tartalmazza az éppen futó programok utasításait és az éppen használatban lévő adatokat. A központi egység innen olvassa ki a következő utasítást, és ide írja a számítások eredményét.</li>
+                    <li>A ki- és bemeneti egységek, amik teremtik meg a kapcsolatot a felhasználó és a számítógép között. Lehetőséget adnak az utasítások és adatok bevitelére, valamint megjelenítik a számítások eredményét.</li>
+                </ul>
+                
+            
+        </div>
+        <hr>
+        <div >
+            <div class="lent-igazít"><img src="1.png" alt="" class="img-thumbnail új képjobb" ></div>
+            <h4>A modern számítógépek</h4>
+            
+               
+            <p>Az első Neumann-elvek alpján írt gép megépítése óta eltelt több, mint 70 évben a számítógépek felépítése sokat változott, de alapjaiban hasonló maradt. Néhány jelentős változás:</p>
+            <ul>
+                    <li>Az összetevők között megjelent egy negyedik csoport, a háttértárak. </li>
+                    <li>Jelentősen megnövekedett a perifériák száma és fajtája.</li>
+                    <li>Megjelentek olyan vezérlőchipek és társprocesszorok, amik a központi egységet tehermentesítik különféle feladatok alól.</li>
+                    <li>A központi egység az operatív tártól függetlenül kapott egy memóriát.</li>
+                    <li>Elterjedtek a többmagos központi egységek. </li>
+                </ul>
+
+        </div>
+        <hr>
+        <h2 class="fent-igazít">A Neumann-elvek</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="img-thumbnail fent col-md-6 ">  
+                    <h3 >A számítógép teljesen elektronikus működésű</h3>
+                    <p>A 19. században és a 20. század elején ugyanis sokan kísérleteztek mechanikus gépekkel. Az elektronikus központi egység és operatív tár azonban gyorsabb, kisebb és kevésbé sérülékeny, mint a mechanikus megoldások. A mozgó alkatrészeket ugyan nem lehet teljesen kizárni, de a fejlődés abba az irányba tart, hogy ezek száma csökkenjen. Jó példa erre az úgynevezett flashmemóriák sikere, amik nemcsak a szalagos, de lassan a lemezes háttértárakat is kiszorítják.</p>
+                </div>
+
+                <div class="img-thumbnail fent col-md-6">       
+                    <h3>A számítógép az utasításokat sorban hajtja végre.</h3>
+                    <p>A központi egység egyszerre egy utasítást olvas ki a memóriából, az adatokat pedig bitenként dolgozza fel. Ez az elv a többmagos processzorok korában úgy módosult, hogy a magok továbbra is sorosan működnek, viszont egymástól függetlenül egyszerre különböző programokat is futtathatnak, így a központi egység párhuzamosan több feladatot is végezhet.</p>
+                        
+                </div>
+               
+                <div class="img-thumbnail fent col-md-6"> 
+                    <h3>A számítógép univerzális működésű.</h3>
+                    <p>A Nemcsak egy adott feladatot tud elvégezni, hanem beprogramozható különféle feladatok elvégzésére. Alan Turing (Neumann kortársa) elmélete szerint ha egy gép el tud végezni néhány alapműveletet (pl.: összeadás, összehasonlítás, másolás), akkor bármilyen bonyolult problémát meg tud oldani. A programozó feladata az, hogy a problémát alapműveletekre bontsa, amiket a számítógép elvégez, és a folyamat végén megszületik a bonyolult számítás eredménye.</p>
+                </div>
+<hr>               
+                <div class="img-thumbnail lent col-md-6 ">      
+                    <h3>A számítógép a tárolt program elvén működik.</h3>
+                    <p>Az éppen futó programok utasításait és az éppen használatban lévő adatokat egy közös tárban (memória) kezeli. Így automatikusan be tudja tölteni a következő utasítást, és ideiglenesen tárolni tudja a számítások közben keletkező részeredményeket is. Ezek következtében kevesebb felhasználói beavatkozásra van szükség, és a számítási sebesség jelentősen megnövekszik.</p>
+                </div>
+
+                <div class="img-thumbnail lent col-md-6 ">       
+                    <h3>A számítógép kettes számrendszerben működik.</h3>
+                    <p>Azaz minden adatot és utasítást bitsorozatok (egyesek és nullák) formájában kezel. A mindössze kétféle érték nemcsak a feldolgozást, hanem a tárolást és a továbbítást is megkönnyíti, ugyanis könnyű mérni, hogy az áramkör egy adott pontján egy időpillanatban éppen van jel (1), vagy nincs (0).</p>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <a class="vissza" href="fooldal.html"><h3>Vissza a főoldalra</h3></a>
+            <div class="row impresszum">
+                <div class="col-xl-3">
+                    <p><b>Források: </b></p>
+                    <ul>
+                        <li class="impli"><a href="https://hu.wikipedia.org/wiki/Optikai_adatt%C3%A1rol%C3%B3k">Optikai adathordozó Wikipédia</a></li>
+                        <li class="impli"><a href="https://hu.wikipedia.org/wiki/CD">CD Wikipédia</a></li>
+                        <li class="impli"><a href="https://hu.wikipedia.org/wiki/DVD">DVD Wikipédia</a></li>
+                        <li class="impli"><a href="https://en.wikipedia.org/wiki/Blu-ray">Blu-Ray Disc Wikipédia</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-2 kozepso">
+                    <p><b>Csapattagok:</b> </p>
+                    <ul>
+                        <li class="impli">Kis Hunor</li>
+                        <li class="impli">Sőregi Kristóf</li>
+                        <li class="impli">Sári Máté</li>
+                    </ul>
+                </div>
+                <div class="col-xl-4">
+                    <p><b>készítette: Borsodi Bakuganok</b></p>
+                    <img class="logokep w-100" src="logo.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
+
